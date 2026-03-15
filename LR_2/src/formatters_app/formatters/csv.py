@@ -36,7 +36,7 @@ save(data: dict, filename: str) -> None
     def format(self, data: dict) -> str:
         rows = []
         for k,v in data.items():
-            rows.append(k,v)
+            rows.append((k,v))
         return "\n".join(",".join(map(str, row)) for row in rows)
     
     def save(self, data: dict, filename: str) -> None:

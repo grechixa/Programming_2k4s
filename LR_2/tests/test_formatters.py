@@ -4,11 +4,11 @@ import yaml
 import os
 import sys
 
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../src")))
 
-from formatters.json import JSONFormatter
-from formatters.csv import CSVFormatter
-from formatters.yaml import YAMLFormatter
+from formatters_app.formatters.json import JSONFormatter
+from formatters_app.formatters.csv import CSVFormatter
+from formatters_app.formatters.yaml import YAMLFormatter
 
 
 data = {

@@ -1,5 +1,5 @@
 import yaml
-from base import IFormat
+from ..base import IFormat
 
 
 class YAMLFormatter(IFormat):
