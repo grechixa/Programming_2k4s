@@ -1,0 +1,6 @@
+#!/Users/gri/Documents/Герцена/2КУРС/Программирование_4сем/LR_2/Decorator/bin/python3.14
+import sys
+from pytest import console_main
+if __name__ == '__main__':
+    sys.argv[0] = sys.argv[0].removesuffix('.exe')
+    sys.exit(console_main())
