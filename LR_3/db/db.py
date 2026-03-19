@@ -1,9 +1,5 @@
-from sqlalchemy.orm import DeclarativeBase
-from sqlalchemy.orm import Mapped
-from sqlalchemy.orm import mapped_column
-from sqlalchemy import String
-from sqlalchemy import ForeignKey
+from sqlalchemy.ext.asyncio import create_async_engine, AsyncSession, async_sessionmaker
 
-class Base(DeclarativeBase):
-    pass
-
+DATABASE_URL = "sqlite+aiosqlite:///database.db"
+engine = create_async_engine(DATABASE_URL)
+async_session = async_sessionmaker(engine, class_=AsyncSession, expire_on_commit=False)

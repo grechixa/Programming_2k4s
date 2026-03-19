@@ -1,4 +1,4 @@
-from db.db import Base
+from db.base import Base
 from user import UserBase
 from currency import Currency
 from sqlalchemy.orm import Mapped
