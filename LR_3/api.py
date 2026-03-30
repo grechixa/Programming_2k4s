@@ -26,4 +26,4 @@ async def create_user(user: UserCreate, db: AsyncSession = Depends(get_db)):
 
 # get users list
 @app.get("/users/", response_model=UserResponse)
-async def user_list()
+# доделать async def user_list()
